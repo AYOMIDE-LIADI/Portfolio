@@ -119,10 +119,7 @@ function Login() {
   }, []);
 
 
-  // const handleScrollToTop = () => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
-
+  
  
 
   useEffect(() => {
@@ -211,7 +208,7 @@ function Login() {
     <AnimatePresence>
     {isMenuOpen && (
       <motion.div onClick={closeMenuBar} initial={{ x: "-100%" }} animate={{ x: isMenuOpen ? 0 : "-100%" }} exit={{ x: "-100%" }} transition={{ type: "spring", stiffness: 60, damping: 15 }} className="fixed  inset-0 bg-black bg-opacity-50 z-50 flex">
-      <div onClick={(e) => e.stopPropagation()} className={`dom relative sidebar top-0 left-0 bg-gray-800 h-screen md:w-[40%] w-[44%]  md:z-50 z-50 shadow-[-6px_0_10px_rgba(0,0,0,0.5)]${isMenuOpen ? 'z-50' : 'hidden md:block'}`}>
+      <div onClick={(e) => e.stopPropagation()} className={`dom relative sidebar top-0 left-0 bg-gray-800 h-screen md:w-[40%] w-[55%]  md:z-50 z-50 shadow-[-6px_0_10px_rgba(0,0,0,0.5)]${isMenuOpen ? 'z-50' : 'hidden md:block'}`}>
       {<div onClick={closeMenuBar} className="absolute top-4 right-6 text-white hover:cursor-pointer"><RiCloseLine size={25}/></div>}    <div className="border border-gray-600 justify-center flex py-[70px]">
         <p className="text-white font-semibold text-[35px]">
           <span className="text-yellow-600">A</span>yom<span className="text-yellow-600">i</span>de
@@ -286,8 +283,8 @@ function Login() {
             <FaAngleUp />
           </button>
         )}
-      <div onClick={openMenuBar} className="lg:hidden fixed top-6 right-[45px] h-[100px] text-white hover:cursor-pointer"><GiHamburgerMenu size={27}/></div>
-        <div id="Home" className="Home py-[250px] px-[70px]">
+      <div onClick={openMenuBar} className="lg:hidden z-50 fixed top-6 right-[45px] h-[100px] text-white hover:cursor-pointer"><GiHamburgerMenu size={27}/></div>
+        <div id="Home" className="Home py-[250px] lg:px-[70px] md:px-[70px] px-[43px]">
           <h1 className="text-3xl font-semibold ">Hi! I’m Liadi Ayomide Daniel</h1>
           <p className="mt-4 text-[70px] font-extrabold mb-[-30px]">WEB</p>
           <p className="text-[70px] font-extrabold text-yellow-600">Developer.</p>
@@ -384,24 +381,24 @@ function Login() {
               <div className="flex gap-6 mt-[60px] ">
                 <motion.div className="w-[50%]"  variants={Resume1} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
                     <div className="border-2 border-gray-700 mb-[30px] p-[20px] relative">
-                        <p className="text-[15px] mb-[20px]">2014 - 2016</p>
-                        <p className="text-yellow-600 text-[17px] mb-1">Nasarawa State University Keffi</p>
-                        <p className="text-[13px]">Diploma In Mass Communication</p>
-                        <FaGraduationCap className="text-gray-600 absolute right-3 top-4 text-[30px]"/>
+                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2014 - 2016</p>
+                        <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Nasarawa State University Keffi</p>
+                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Diploma In Mass Communication</p>
+                        <FaGraduationCap className="text-gray-600 absolute right-3 top-4 lg:text-[30px] md:text-[30px] text-[20px]"/>
                     </div>
                     <div className="border-2 border-gray-700  p-[20px] relative">
-                        <p className="text-[15px] mb-[20px]">2015 - 2019</p>
-                        <p className="text-yellow-600 text-[17px] mb-1">Nasarawa State University Keffi</p>
-                        <p className="text-[13px]">Bs.c Psychology</p>
-                        <FaGraduationCap className="text-gray-600 absolute right-3 top-4 text-[30px]"/>
+                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2015 - 2019</p>
+                        <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Nasarawa State University Keffi</p>
+                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Bs.c Psychology</p>
+                        <FaGraduationCap className="text-gray-600 absolute right-3 top-4 lg:text-[30px] md:text-[30px] text-[20px]"/>
                     </div>
                 </motion.div>
                 <motion.div className="w-[50%]" variants={Resume2} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
-                    <div className="border-2 border-gray-700  p-[20px] relative">
-                        <p className="text-[15px] mb-[20px]">2023 - 2025</p>
-                        <p className="text-yellow-600 text-[17px] mb-1">Rework, Abuja Nigeria </p>
-                        <p className="text-[13px]">Web Developer</p>
-                        <PiBriefcaseBold className="text-gray-600 absolute right-3 top-4 text-[30px]"/>
+                    <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-0 md:pb-0 pb-[38px] relative">
+                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2023 - 2025</p>
+                        <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Rework, Abuja Nigeria </p>
+                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Web Developer</p>
+                        <PiBriefcaseBold className="text-gray-600 absolute lg:right-3 md:right-3 lg:top-4 md:top-4 right-3 top-7 lg:text-[30px] md:text-[30px] text-[20px]"/>
                     </div>
                 </motion.div>
               </div>
@@ -436,13 +433,13 @@ function Login() {
                   <FaMinus/> 
               </div>
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]">
-                  <div className="h-[350px] w-[350px] border border-gray-600 relative group overflow-hidden">
+                  <div className="h-[350px] w-[350px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
                       <Image
                         src="/cinco-logo.png"
                         alt="Cinco Image" 
                         width={350}
                         height={350}  
-                        className="absolute transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110"
+                        className="absolute items-center align-middle transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110"
                       />
 
                       <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-[20000ms] ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
