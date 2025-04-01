@@ -378,23 +378,9 @@ function Login() {
                   <FaGraduationCap/>
                   <FaMinus/> 
               </div>
-              <div className="flex gap-6 mt-[60px] ">
-                <motion.div className="w-[50%]"  variants={Resume1} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
-                    <div className="border-2 border-gray-700 mb-[30px] p-[20px] relative">
-                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2014 - 2016</p>
-                        <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Nasarawa State University Keffi</p>
-                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Diploma In Mass Communication</p>
-                        <FaGraduationCap className="text-gray-600 absolute right-3 top-4 lg:text-[30px] md:text-[30px] text-[20px]"/>
-                    </div>
-                    <div className="border-2 border-gray-700  p-[20px] relative">
-                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2015 - 2019</p>
-                        <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Nasarawa State University Keffi</p>
-                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Bs.c Psychology</p>
-                        <FaGraduationCap className="text-gray-600 absolute right-3 top-4 lg:text-[30px] md:text-[30px] text-[20px]"/>
-                    </div>
-                </motion.div>
+              <div className="mt-[60px]">
                 <motion.div className="w-[50%]" variants={Resume2} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
-                    <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-0 md:pb-0 pb-[38px] relative">
+                    <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-[20px] md:pb-[20px] pb-[38px] relative">
                         <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2023 - 2025</p>
                         <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Rework, Abuja Nigeria </p>
                         <p className="lg:text-[13px] md:text-[13px] text-[10px]">Web Developer</p>
@@ -439,7 +425,7 @@ function Login() {
                         alt="Cinco Image" 
                         width={350}
                         height={350}  
-                        className="absolute items-center align-middle transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110"
+                        className="absolute items-center align-middle transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110 w-auto max-w-[80%] sm:max-w-[350px]"
                       />
 
                       <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-[20000ms] ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
