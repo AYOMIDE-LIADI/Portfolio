@@ -373,12 +373,12 @@ function Login() {
         </div>
         <div id="Resume" ref={resumeRef} className="Resume  bg-gray-800 py-[80px] px-[60px] overflow-hidden">
              <p className="text-yellow-600 flex justify-center font-semibold text-[28px]">RESUME</p>
-              <div className="flex align-middle justify-center text-yellow-600 text-[26px] gap-1">
+              <div className="flex align-middle justify-center  text-yellow-600 text-[26px] gap-1">
                   <FaMinus/> 
                   <FaGraduationCap/>
                   <FaMinus/> 
               </div>
-              <div className="mt-[60px]">
+              <div className="mt-[60px] justify-center items-center flex">
                 <motion.div className="w-[50%]" variants={Resume2} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
                     <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-[20px] md:pb-[20px] pb-[38px] relative">
                         <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2023 - 2025</p>
@@ -418,20 +418,21 @@ function Login() {
                   <PiBriefcaseBold/>
                   <FaMinus/> 
               </div>
-              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]">
-                  <div className="h-[350px] w-[350px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]  px-[100px]">
+                  <div className="box lg:h-[350px] md:h-[350px] h-[150px] lg:w-[350px] md:w-[350px] w-[150px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
                       <Image
                         src="/cinco-logo.png"
                         alt="Cinco Image" 
                         width={350}
                         height={350}  
-                        className="absolute items-center align-middle transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110 w-auto max-w-[80%] sm:max-w-[350px]"
+                        className="absolute transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110 "
                       />
 
                       <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-[20000ms] ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
                         <div className="text-[13px]">
-                          <p>Cinco Cinema</p>
-                          <p className="text-yellow-600">Web Design</p>
+                          <p className="lg:text-[12px] md:text-[11px] text-[9px]">Cinco Cinema</p>
+                          <p className="text-yellow-600 lg:text-[12px] md:text-[11px] text-[9px]">Web Design</p>
+                          <a className="lg:text-[12px] md:text-[11px] text-[9px]" href="https://cincocinema.onrender.com">View</a>
                         </div>
                       </div>
                   
