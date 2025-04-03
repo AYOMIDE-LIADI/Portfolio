@@ -269,7 +269,7 @@ function Login() {
     </div>
     </motion.div>)}
     </AnimatePresence>
-  <div className=" w-full relative lg:w-[78%] min-h-screen lg:ml-[22%] ">
+  <div className=" w-full relative lg:w-[78%] min-h-screen lg:ml-[22%] overflow-hidden">
       <div className=" fixed inset-0 lg:w-[78%] w-[950px] md:w-[1000px] h-screen bg-cover bg-center lg:ml-[22%]  bg-no-repeat" 
         style={{ backgroundImage: "url('/bg2.jpeg')" }}>
         <div className="absolute inset-0 bg-gray-800 bg-opacity-50"></div>
@@ -418,7 +418,7 @@ function Login() {
                   <PiBriefcaseBold/>
                   <FaMinus/> 
               </div>
-              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]  lg:px-0 md:px-0 px-[80px]">
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]  lg:px-0 md:px-0 px-[75px]">
                   <div className="box lg:h-[350px] md:h-[350px] h-[150px] lg:w-[350px] md:w-[350px] w-[150px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
                       <Image
                         src="/cinco-logo.png"
