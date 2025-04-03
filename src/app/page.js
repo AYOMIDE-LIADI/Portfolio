@@ -269,7 +269,7 @@ function Login() {
     </div>
     </motion.div>)}
     </AnimatePresence>
-  <div className=" w-full relative lg:w-[78%] min-h-screen lg:ml-[22%] overflow-hidden">
+  <div className=" w-full fixed lg:w-[78%] min-h-screen lg:ml-[22%] overflow-hidden">
       <div className=" fixed inset-0 lg:w-[78%] w-[950px] md:w-[1000px] h-screen bg-cover bg-center lg:ml-[22%]  bg-no-repeat" 
         style={{ backgroundImage: "url('/bg2.jpeg')" }}>
         <div className="absolute inset-0 bg-gray-800 bg-opacity-50"></div>
