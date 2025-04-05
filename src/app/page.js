@@ -420,13 +420,17 @@ function Login() {
               </div>
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]  lg:px-0 md:px-0 px-[75px]">
                   <div className="box lg:h-[350px] md:h-[350px] h-[150px] lg:w-[350px] md:w-[350px] w-[150px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
-                      <Image
+                      {/* <Image
                         src="/cinco-logo.png"
                         alt="Cinco Image" 
                         width={350}
                         height={350}  
                         className="absolute transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110 "
-                      />
+                      /> */}
+
+                      <iframe src="https://cincocinema.onrender.com" className="w-[350px] h-[350px]"/>
+
+                    
 
                       <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-[20000ms] ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
                         <div className="text-[13px]">
