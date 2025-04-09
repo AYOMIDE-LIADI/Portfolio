@@ -286,8 +286,8 @@ function Login() {
       <div onClick={openMenuBar} className="lg:hidden z-50 fixed top-6 right-[45px] h-[100px] text-white hover:cursor-pointer"><GiHamburgerMenu size={27}/></div>
         <div id="Home" className="Home py-[250px] lg:px-[70px] md:px-[70px] px-[43px]">
           <h1 className="lg:text-3xl md:text-3xl text-[20px] font-semibold  ">Hi! I’m Liadi Ayomide Daniel</h1>
-          <p className="mt-4 lg:text-[70px] md:text-[70px] text-[40px] font-extrabold lg:mb-[-30px] md:mb-[-30px] mb-[-15px]">FRONTEND</p>
-          <p className="lg:text-[70px] md:text-[70px] text-[40px] font-extrabold text-yellow-600">DEVELOPER.</p>
+          <p className="mt-4 lg:text-[70px] md:text-[70px] text-[55px] font-extrabold lg:mb-[-30px] md:mb-[-30px] mb-[-15px]">FRONTEND</p>
+          <p className="lg:text-[70px] md:text-[70px] text-[55px] font-extrabold text-yellow-600">DEVELOPER.</p>
         </div>
         <div id="About" ref={aboutRef} className="About bg-gray-800 py-[80px] px-[60px]  overflow-hidden">
               <p className="text-yellow-600 flex justify-center font-semibold text-[28px]">ABOUT ME</p>
