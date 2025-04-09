@@ -285,9 +285,9 @@ function Login() {
         )}
       <div onClick={openMenuBar} className="lg:hidden z-50 fixed top-6 right-[45px] h-[100px] text-white hover:cursor-pointer"><GiHamburgerMenu size={27}/></div>
         <div id="Home" className="Home py-[250px] lg:px-[70px] md:px-[70px] px-[43px]">
-          <h1 className="text-3xl font-semibold ">Hi! I’m Liadi Ayomide Daniel</h1>
-          <p className="mt-4 text-[70px] font-extrabold mb-[-30px]">WEB</p>
-          <p className="text-[70px] font-extrabold text-yellow-600">Developer.</p>
+          <h1 className="lg:text-3xl md:text-3xl text-[20px] font-semibold  ">Hi! I’m Liadi Ayomide Daniel</h1>
+          <p className="mt-4 lg:text-[70px] md:text-[70px] text-[40px] font-extrabold lg:mb-[-30px] md:mb-[-30px] mb-[-15px]">FRONTEND</p>
+          <p className="lg:text-[70px] md:text-[70px] text-[40px] font-extrabold text-yellow-600">DEVELOPER.</p>
         </div>
         <div id="About" ref={aboutRef} className="About bg-gray-800 py-[80px] px-[60px]  overflow-hidden">
               <p className="text-yellow-600 flex justify-center font-semibold text-[28px]">ABOUT ME</p>
@@ -310,8 +310,8 @@ function Login() {
                   <motion.div className="text lg:w-[65%] md:w-[65%] w-full " variants={textVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
                     <p className="font-medium lg:text-[20px] md:text-[13px] text-[18px]">Hi! I’m Liadi Ayomide Daniel</p>
                     <FaMinus className="text-yellow-600 text-[30px]"/>
-                    <p className="font-medium lg:text-[25px] md:text-[16px] text-[20px] mb-8">I'm a Web Developer based in Abuja, Nigeria.</p>
-                    <p className="text-gray-400 lg:text-[15px] md:text-[12px] text-[11px] lg:mb-4 mb-3">An innovative and detail-oriented Web Developer passionate about building dynamic, user-friendly, 
+                    <p className="font-medium lg:text-[25px] md:text-[16px] text-[20px] mb-8">I'm a Frontend Developer based in Abuja, Nigeria.</p>
+                    <p className="text-gray-400 lg:text-[15px] md:text-[12px] text-[11px] lg:mb-4 mb-3">An innovative and detail-oriented Frontend Developer passionate about building dynamic, user-friendly, 
                       and visually appealing web experiences.</p>
                       <p className="text-gray-400 lg:text-[15px] md:text-[12px] text-[11px]">Proficient in modern web technologies, front-end frameworks, 
                       and responsive design principles. Skilled in problem-solving and optimizing performance to deliver 
@@ -383,7 +383,7 @@ function Login() {
                     <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-[20px] md:pb-[20px] pb-[38px] relative">
                         <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2023 - 2025</p>
                         <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Rework, Abuja Nigeria </p>
-                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Web Developer</p>
+                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Frontend Developer</p>
                         <PiBriefcaseBold className="text-gray-600 absolute lg:right-3 md:right-3 lg:top-4 md:top-4 right-3 top-7 lg:text-[30px] md:text-[30px] text-[20px]"/>
                     </div>
                 </motion.div>
@@ -420,15 +420,8 @@ function Login() {
               </div>
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]  lg:px-0 md:px-0 px-[75px]">
                   <div className="box lg:h-[350px] md:h-[350px] h-[150px] lg:w-[350px] md:w-[350px] w-[150px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
-                      {/* <Image
-                        src="/cinco-logo.png"
-                        alt="Cinco Image" 
-                        width={350}
-                        height={350}  
-                        className="absolute transform scale-100 transition-all duration-[5000ms] ease-in-out group-hover:scale-110 "
-                      /> */}
-
-                      <iframe src="https://cincocinema.onrender.com" className="w-[350px] h-[350px]"/>
+                    
+                    <iframe src="https://cincocinema.onrender.com" className="w-[350px] h-[350px]"/>
 
                     
 
