@@ -297,7 +297,7 @@ function Login() {
                   <FaMinus/> 
               </div>
               <div className="lg:flex md:flex gap-[40px] mt-[60px]">
-                  <motion.div className="image  relative lg:mb-0 md:mb-0 mb-[40px] lg:border-[7px] mb:border-[4px] border-[3px] border-gray-600 " variants={imageVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
+                  {/* <motion.div className="image  relative lg:mb-0 md:mb-0 mb-[40px] lg:border-[7px] mb:border-[4px] border-[3px] border-gray-600 " variants={imageVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
                     <Image 
                       src="/single.jpeg" 
                       alt="Single Image" 
@@ -306,7 +306,7 @@ function Login() {
                       style={{ width: "100%", height: "auto" }} 
                     />
                     <div className="absolute inset-0 bg-gray-600 bg-opacity-25 transition-opacity duration-300 hover:opacity-0"></div>
-                  </motion.div>
+                  </motion.div> */}
                   <motion.div className="text lg:w-[65%] md:w-[65%] w-full " variants={textVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
                     <p className="font-medium lg:text-[20px] md:text-[13px] text-[18px]">Hi! I’m Liadi Ayomide Daniel</p>
                     <FaMinus className="text-yellow-600 text-[30px]"/>
@@ -418,23 +418,30 @@ function Login() {
                   <PiBriefcaseBold/>
                   <FaMinus/> 
               </div>
-              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 mt-[60px]  lg:px-0 md:px-0 px-[75px]">
-                  <div className="box lg:h-[350px] md:h-[350px] h-[150px] lg:w-[350px] md:w-[350px] w-[150px] border border-gray-600 justify-center align-middle relative group overflow-hidden">
-                    
-                    <iframe src="https://cincocinema.onrender.com" className="w-[350px] h-[350px]"/>
-
-                    
-
-                      <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-[20000ms] ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
-                        <div className="text-[13px]">
-                          <p className="lg:text-[12px] md:text-[11px] text-[9px]">Cinco Cinema</p>
-                          <p className="text-yellow-600 lg:text-[12px] md:text-[11px] text-[9px]">Web Design</p>
-                          <a className="lg:text-[12px] md:text-[11px] text-[9px]" href="https://cincocinema.onrender.com">View</a>
-                        </div>
-                      </div>
-                  
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-[60px] px-[20px]">
+                <div className="box h-[350px] w-full border border-gray-600 relative group overflow-hidden rounded-xl">
+                  <iframe src="https://cincocinema.onrender.com" className="w-full h-full" />
+                  <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
+                    <div className="text-[13px]">
+                      <p className="text-[12px]">Cinco Cinema</p>
+                      <p className="text-yellow-600 text-[12px]">Movie Booking website</p>
+                      <a className="text-[12px]" href="https://cincocinema.onrender.com">View</a>
+                    </div>
                   </div>
+                </div>
+
+                <div className="box h-[350px] w-full border border-gray-600 relative group overflow-hidden rounded-xl">
+                  <iframe src="https://rnd-apparel-l6sn.vercel.app/Homepage" className="w-full h-full" />
+                  <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
+                    <div className="text-[13px]">
+                      <p className="text-[12px]">rnd.apparel</p>
+                      <p className="text-yellow-600 text-[12px]">Ecommerce</p>
+                      <a className="text-[12px]" href="https://rnd-apparel-l6sn.vercel.app/Homepage">View</a>
+                    </div>
+                  </div>
+                </div>
               </div>
+
         </div>
         <div id="Contact" ref={contactRef} className="Contact  bg-gray-900 py-[80px] px-[60px]">
           <p className="text-yellow-600 flex justify-center font-semibold text-[28px]">CONTACT ME</p>
