@@ -297,16 +297,16 @@ function Login() {
                   <FaMinus/> 
               </div>
               <div className="lg:flex md:flex gap-[40px] mt-[60px]">
-                  {/* <motion.div className="image  relative lg:mb-0 md:mb-0 mb-[40px] lg:border-[7px] mb:border-[4px] border-[3px] border-gray-600 " variants={imageVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
+                  <motion.div className="image  relative lg:mb-0 md:mb-0 mb-[40px] lg:border-[7px] mb:border-[4px] border-[3px] border-gray-600 " variants={imageVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
                     <Image 
-                      src="/single.jpeg" 
+                      src="/single1.jpeg" 
                       alt="Single Image" 
                       width={450}
                       height={100} 
                       style={{ width: "100%", height: "auto" }} 
                     />
                     <div className="absolute inset-0 bg-gray-600 bg-opacity-25 transition-opacity duration-300 hover:opacity-0"></div>
-                  </motion.div> */}
+                  </motion.div>
                   <motion.div className="text lg:w-[65%] md:w-[65%] w-full " variants={textVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
                     <p className="font-medium lg:text-[20px] md:text-[13px] text-[18px]">Hi! I’m Liadi Ayomide Daniel</p>
                     <FaMinus className="text-yellow-600 text-[30px]"/>
@@ -378,10 +378,21 @@ function Login() {
                   <FaGraduationCap/>
                   <FaMinus/> 
               </div>
+
               <div className="mt-[60px] justify-center items-center flex">
                 <motion.div className="w-[50%]" variants={Resume2} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
                     <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-[20px] md:pb-[20px] pb-[38px] relative">
-                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">2023 - 2025</p>
+                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">July 2025 - Present</p>
+                        <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Cabvibe, Abuja Nigeria </p>
+                        <p className="lg:text-[13px] md:text-[13px] text-[10px]">Frontend Developer</p>
+                        <PiBriefcaseBold className="text-gray-600 absolute lg:right-3 md:right-3 lg:top-4 md:top-4 right-3 top-7 lg:text-[30px] md:text-[30px] text-[20px]"/>
+                    </div>
+                </motion.div>
+              </div>
+              <div className="mt-[60px] justify-center items-center flex">
+                <motion.div className="w-[50%]" variants={Resume2} initial="hidden" animate={isInView2 ? "visible" : "hidden"}>
+                    <div className="border-2 border-gray-700  lg:p-[20px] md:p-[20px] p-[31px] lg:pb-[20px] md:pb-[20px] pb-[38px] relative">
+                        <p className="lg:text-[15px] md:text-[15px] text-[12px] mb-[20px]">April 2023 - Febuary 2025</p>
                         <p className="text-yellow-600 lg:text-[17px] md:text-[17px] text-[10px] mb-1">Rework, Abuja Nigeria </p>
                         <p className="lg:text-[13px] md:text-[13px] text-[10px]">Frontend Developer</p>
                         <PiBriefcaseBold className="text-gray-600 absolute lg:right-3 md:right-3 lg:top-4 md:top-4 right-3 top-7 lg:text-[30px] md:text-[30px] text-[20px]"/>
