@@ -464,9 +464,19 @@ function Login() {
                   <iframe src="https://rnd-apparel-l6sn.vercel.app/Homepage" className="w-full h-full" />
                   <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
                     <div className="text-[13px]">
-                      <p className="text-[12px]">rnd.apparel</p>
+                      <p className="text-[12px]">Rnd.apparel</p>
                       <p className="text-yellow-600 text-[12px]">Ecommerce</p>
                       <a className="text-[12px]" href="https://rnd-apparel-l6sn.vercel.app/Homepage">View</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box h-[350px] w-full border border-gray-600 relative group overflow-hidden rounded-xl">
+                  <iframe src="https://mini-github-explorer-qsh8.vercel.app/" className="w-full h-full" />
+                  <div className="trans p-7 absolute inset-0 bg-black flex bg-opacity-60 scale-0 rotate-[-180deg] text-center items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.1,0.7,0.1,1)] group-hover:scale-100 group-hover:rotate-0">
+                    <div className="text-[13px]">
+                      <p className="text-[12px]">Mini Github Explorer</p>
+                      <p className="text-yellow-600 text-[12px]">Web Applications</p>
+                      <a className="text-[12px]" href="https://mini-github-explorer-qsh8.vercel.app/">View</a>
                     </div>
                   </div>
                 </div>
